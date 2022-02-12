@@ -1,0 +1,98 @@
+/* Todos os elementos da pagina */
+/* * {
+    margin:0;
+    padding: 0;
+} */
+
+/* Elementos da tag <body> */
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-image: linear-gradient(to right, rgb(20, 147, 220), rgb(17, 54, 71));
+    
+}
+
+/*Elementos da classe "grupo" */
+.box{
+    color: white;
+    position: absolute;        
+    top: 50%;    
+    left: 50%;       
+    transform: translate(-40%,-40%);
+    background-color: rgba(0, 0, 0, 0.6);
+    padding: 15px;
+    border-radius: 15px;
+    width: 20%;    
+    
+}
+
+/* Elementos de classe "grupo" tag <fieldset> */
+fieldset{
+    border: 3px solid dodgerblue;
+}
+
+/* Elementos de tag <legend> */
+legend{
+    border: 1px solid dodgerblue;
+    padding: 10px;
+    text-align: center;
+    background-color: dodgerblue;
+    border-radius: 8px;
+}
+
+/* Elementos de classe "inputBox" tags <input> <label> */
+.inputBox{
+    position: relative;    
+}
+
+/*Elemento de class "inputBox" class "inputUser" */
+.inputUser{
+    background: none;
+    border: none;
+    border-bottom: 1px solid white;
+    outline: none;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    letter-spacing: 2px;
+}
+
+/* Elementos de classe "inputBox" tags <input> <label> */
+.labelInput{
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    pointer-events: none;
+    transition: .5s;
+}
+
+/* Elemento de classe "inputBox" elemento class "inputUser" */
+.inputUser:focus ~ .labelInput,
+.inputUser:valid ~ .labelInput{
+    top: -20px;
+    font-size: 12px;
+    color: dodgerblue;    
+}
+
+#data_nascimento{
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+    outline: none;
+    font-size: 15px;
+}
+
+#submit{
+    background-image: linear-gradient(to right,rgb(0, 92, 197), rgb(90, 20, 220));
+    width: 100%;
+    border: none;
+    padding: 15px;
+    color: white;
+    font-size: 15px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+#submit:hover{
+    background-image: linear-gradient(to right,rgb(0, 80, 172), rgb(80, 19, 195));
+}
